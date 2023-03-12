@@ -527,3 +527,91 @@ export {}
 
 ~~~~
 
+# 回顾
+
+## 一. 完成课堂所有的代码
+
+
+
+
+
+
+
+## 二. JavaScript有什么缺点？TypeScript弥补了JavaScript的什么缺点？
+
+**js的缺陷 -> 没有确定类型**
+
+**ts弥补了js不能对类型进行判断**
+
+
+
+## 三. TypeScript有什么特点？哪些框架或者项目在使用TypeScript？
+
+TypeScript的特点 ->
+
+1.   typescripit是js的超集, 他包括了js的所有语法包括最新的语法
+
+2. typescripit可以对类型进行判断,
+
+3. typescripit类型注解,让代码更佳容易维护,且提高了代码的可读性
+
+   
+
+使用TypeScript的框架
+
+​	1.Vue3源码
+
+​	2.React源码
+
+
+
+
+
+## 四. TypeScript的运行环境如何搭建？如何运行TypeScript代码？
+
+1.通过webpack搭建的环境,使用ts-loader typescript 编译为js代码
+
+2.安装typescript为我们提供的编译工具 
+
+3.使用tsc xxx来编译ts代码 
+
+
+
+## 五. 如何定义TypeScript的变量，定义变量支持哪些JavaScript类型？
+
+const num :number= '123'
+
+const str:string = '123'
+
+const arr: number[] =[1,2,3]  
+
+const obj :{name:string,age:number} ={name:'张三',age:18}
+
+function foo():void{}   -> 指定函数的返回值
+
+
+
+## 六. 常见的TypeScript特有类型有哪些？这些类型有什么作用？
+
+any类型
+
+​	any类型相对应js中普通的代码一样,他没有对类型进行任何校验,当我们操作any的值时候需要格外小心
+
+unknown类型
+
+​	unknown有点类似于any类型 ,但是我们对它进行操作的时候,不能像any一样随心所欲,而是要先进行类型缩小(判断是什么类型)
+
+void类型
+
+一般用来指定函数的返回值  当一个函数返回undefined或者没有返回值时候,函数就是void类型
+
+never类型
+
+1. ​	一个函数是死循环 
+2.  一个函数没有返回任何东西 就是never类型
+
+tuple元组
+
+1.  元组类型(介于数组和对象之间的数据类型) python等语言中有这个类型
+2.  相对数组来说 元组类型中可以存放不同数据类型
+3.  取出来的value也是有对应的类型的
